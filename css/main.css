@@ -179,8 +179,8 @@ h4, h5, h6{
 
 
 .main-header{
-    padding: 3em 0;
     position: relative;
+    padding: 0 0 3em 0;
 }
 
 .main-header:before,
@@ -220,7 +220,6 @@ h4, h5, h6{
 .main-header__banner-wrap{
     position: relative;
     padding: 3em 2em 6em 2em;
-    margin-bottom: 4em;
 }
 
 .main-header__banner-wrap:before,
@@ -233,28 +232,30 @@ h4, h5, h6{
 }
 
 .main-header__banner-wrap:before{
-    /* width: 255px;
-    height: 255px; */
-    width: 127px;
-    height: 127px;
+    bottom: 0px;
+    left: 50%;
+    margin-left: -150px;
+    width: 300px;
+    height: 300px;
     background-image: url(../img/Fluri_Singing.png);
-    bottom: -2em;
-	left: 2em;
+    transform: translate(-58%, 20px);
 }
 
 .main-header__banner-wrap:after{
-    /* width: 111px;
-    height: 109px; */
-    width: 55px;
-    height: 54px;
+    bottom: 0px;
+    left: 50%;
+    margin-left: -50px;
+    width: 100px;
+    height: 100px;
     background-image: url(../img/snowman2.png);
-    bottom: -2em;
-	right: 2em;
+    transform: translate(140%, 20px);
 }
 
 
 
 .main-header__banner{
+    position: relative;
+    left: -4%;
     display: block;
     margin: 0 auto;
     max-width: 100%;
@@ -318,8 +319,8 @@ h4, h5, h6{
     }
 
 .main-content__article{
+    padding: 0 1.5rem;
     font-size: 13px;
-    padding: 0 1.5em;
     overflow: hidden;
 }
 
@@ -331,8 +332,8 @@ h4, h5, h6{
 }
 
 .main-content__copy{
+    margin-bottom: 2.25rem;
     font-size: 1.125em;
-    margin-bottom: 1.5em;
 }
 
 
@@ -351,6 +352,7 @@ h4, h5, h6{
 }
 
 .signup__label--chk{
+    margin: .5rem 0;
     display: block;
 }
 
@@ -366,13 +368,14 @@ h4, h5, h6{
 .signup__input{}
 
 .signup__input--email{
-    border-radius: 6px;
-    outline: 0;
-    border: 0;
-    padding: 1em .25em;
+    padding: .9em 1rem;
     display: inline-block;
     vertical-align: middle;
     width: 100%;
+    outline: 0;
+    border: 0;
+    border-radius: 6px;
+    font-size: 1.125em;
 }
 
 .signup__input--checkbox{
@@ -385,7 +388,7 @@ h4, h5, h6{
 
 .signup__label-text--chk{
     width: 87%;
-    font-size: 0.75em;
+    font-size: 1em;
 }
 
 .signup__input--checkbox,
@@ -421,7 +424,7 @@ h4, h5, h6{
 .main-footer{
     background: #000;
     color: #fff;
-    padding: 3em 1.5em 1.5em 1.5em;
+    padding: 3em 1.5rem 1.5em 1.5rem;
     padding-top: 3em;
 }
 
@@ -460,23 +463,6 @@ h4, h5, h6{
         height: 6px;
         bottom: 21em;
         right: 35%;
-    }
-
-    .main-header__banner-wrap:before{
-        /* width: 255px;
-        height: 315px; */
-        width: 192px;
-        height: 237px;
-        bottom: -7em;
-    }
-
-    .main-header__banner-wrap:after{
-        /* width: 111px;
-        height: 109px; */
-        width: 84px;
-        height: 82px;
-        bottom: -6em;
-        right: 6em;
     }
 
     .main-header__headline-separator{
@@ -519,10 +505,6 @@ h4, h5, h6{
         font-size: 16px;
     }
 
-    .signup__input--email{
-        padding: 1.35em .25em;
-    }
-
     .main-footer{
         overflow: hidden;
     }
@@ -560,26 +542,16 @@ h4, h5, h6{
 
         background-image: url(../img/snow-pattern.svg);
         background-repeat: repeat-y;
-        
+
         content: "";
     }
 
     .main-header__banner-wrap:before{
-        /* width: 255px;
-        height: 315px; */
-        width: 192px;
-        height: 237px;
-        bottom: -7em;
-        right: -1em;
+        transform: translate(-80%, 20px);
     }
 
     .main-header__banner-wrap:after{
-        /* width: 111px;
-        height: 109px; */
-        width: 84px;
-        height: 82px;
-        bottom: -6em;
-        right: 7.75em;
+        
     }
 
     .main-header__audio-wrapper:before{
@@ -597,7 +569,12 @@ h4, h5, h6{
     }
 
     .main-content__article{
-        padding: 0 3em;
+        padding: 0 6rem;
+    }
+
+    .main-footer {
+        padding-left: 6rem;
+        padding-right: 6rem;
     }
 }
 
