@@ -39,17 +39,10 @@
 		formFields = [].slice.call(form.querySelectorAll('input'));
 
 	formSubmit.addEventListener('click', function (e) {
-		e.preventDefault();
-
 		var email = emailField.value;
 
-		if (util.validMail(email)) {
-			util.getFormData(formFields, function (data) {
-				util.ajax(form.method, form.action, data, function (res) {
-					console.log('res', res);
-				});
-			});
-		} else {
+		if (!util.validMail(email)) {
+			e.preventDefault();
 			alert('Please enter a valid email address');
 		}
 	});
