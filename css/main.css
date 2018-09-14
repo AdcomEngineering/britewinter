@@ -551,14 +551,15 @@ h4, h5, h6{
 
     .main-header:after{
         content: "";
-        width: 19px;
+        width: 18px;
         height: 100%;
         position: absolute;
         right: -9px;
         top: 0;
         bottom: 0;
+        background-repeat: repeat-y;
 
-        background-image: url(../img/brite-winter-snow-edge.png);
+        background-image: url(../img/snow-pattern.svg);
         z-index: 100;
     }
 
