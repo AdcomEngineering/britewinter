@@ -1,0 +1,592 @@
+
+/*RESET*/
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+	-webkit-margin-start: 0;
+	-webkit-margin-end: 0;
+	-webkit-padding-start: 0;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+}
+
+html{-webkit-font-smoothing: antialiased; overflow-y: scroll; }
+/* body{line-height: 1.5 } */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strong, sub, sup, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    font-weight: inherit;
+    font-style: inherit;
+    font-family: inherit;
+    vertical-align: baseline;
+}
+main, article, aside, details, figcaption, figure, footer,
+header, hgroup, nav, section, summary {display: block; }
+
+input, select, audio,
+canvas, img, svg, video { vertical-align: middle }
+
+img {
+    max-width: 100%;
+    height: auto;
+	-ms-interpolation-mode: bicubic;
+	image-rendering:optimizeQuality;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+caption, th, td {
+    text-align: left;
+    font-weight: normal;
+}
+
+ol, ul {list-style-type: none; -webkit-padding-start: 0; }
+
+blockquote, q {quotes: "" ""; }
+
+blockquote:before, blockquote:after, q:before,  q:after{content: ""; }
+
+a, ins {
+	text-decoration: none;
+}
+mark {
+    font-style: italic;
+    font-weight: bold;
+}
+mark, ins {
+	background-color: #ff9;
+    color: #000;
+}
+del{text-decoration: line-through; }
+
+abbr[title],
+dfn[title] {
+    border-bottom: 1px dotted #000;
+    cursor: help;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+pre {
+    padding: 1em;
+    white-space: pre;
+    white-space: pre-wrap;
+    white-space: pre-line;
+    word-wrap: break-word;
+}
+
+a, input[type="submit"], input[type="button"], button, label[for] {cursor: pointer; }
+
+::-moz-selection {
+    background: #aeaeae;
+    text-shadow: none;
+}
+
+::selection {
+    background: #aeaeae;
+    text-shadow: none;
+}
+
+:required {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+em, i {font-style: italic; }
+
+strong, b {font-weight: bold; }
+
+u {text-decoration: underline; }
+
+pre, code {font-family: Monaco, Courier, monospace; }
+
+
+
+
+
+
+/* Helpers */
+.cf:before,
+.cf:after {content: " "; display: table; }
+.cf:after{clear: both; }
+.cf{*zoom: 1; }
+
+
+
+/******** Museo Slab ************
+
+font-family:'Museo Slab W01_100';
+font-family:'Museo Slab W01_300';
+font-family:'Museo Slab W01_900';
+
+**********************************/
+
+/******* Refrigerator Delux *********
+
+font-family:'RefrigeratorDeluxeW01-L';
+font-family:'RefrigeratorDeluxeW01-R';
+font-family:'RefrigeratorDeluxeW01-B';
+font-family:'RefrigeratorDeluxeW01-H';
+
+*************************************/
+
+/* brite-winter-snow-edge.png */
+
+/* Style Below */
+body{
+    font-family:'Museo Slab W01_100';
+    overflow-x: hidden;
+}
+
+h1, h2, h3,
+h4, h5, h6{
+    font-family:'RefrigeratorDeluxeW01-H';
+    text-transform: uppercase;
+}
+
+
+.main-header{
+    padding: 3em 0;
+    position: relative;
+}
+
+.main-header:before,
+.main-header:after{
+    content: "";
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.main-header:before{
+    /* width: 38px;
+    height: 6px; */
+
+    width: 19px;
+    height: 3px;
+    background-image: url(../img/snow-pile-1.png);
+
+    bottom: 21em;
+    left: 7%;
+}
+
+.main-header:after{
+    /* width: 42px;
+    height: 6px; */
+
+    width: 21px;
+    height: 3px;
+
+    background-image: url(../img/snow-pile-2.png);
+
+    bottom: 23em;
+	right: 35%;
+}
+
+
+.main-header__banner-wrap{
+    position: relative;
+    padding: 3em 2em 6em 2em;
+    margin-bottom: 4em;
+}
+
+.main-header__banner-wrap:before,
+.main-header__banner-wrap:after{
+    content: "";
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 2;
+}
+
+.main-header__banner-wrap:before{
+    /* width: 255px;
+    height: 255px; */
+    width: 127px;
+    height: 127px;
+    background-image: url(../img/Fluri_Singing.png);
+    bottom: -2em;
+	left: 2em;
+}
+
+.main-header__banner-wrap:after{
+    /* width: 111px;
+    height: 109px; */
+    width: 55px;
+    height: 54px;
+    background-image: url(../img/snowman2.png);
+    bottom: -2em;
+	right: 2em;
+}
+
+
+
+.main-header__banner{
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.main-header__headline{
+    color: #73D0E9;
+    font-size: 1.5em;
+    text-align: center;
+    /* padding: 0 0 0 1em; */
+}
+
+.main-header__headline--center{
+    text-align: center;
+    /* margin-bottom: 1em; *************************************************************/
+    font-size: 2em;
+}
+
+.main-header__headline-separator{
+    display: block;
+    text-indent: -9999px;
+    overflow: hidden;
+    height: 0;
+}
+
+.main-header__headline em{
+    font-style: normal;
+    text-decoration: underline;
+}
+
+.main-header__audio-wrapper{
+    background: #000;
+    width: 300px;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+.main-content{
+    background: #000;
+    color: #fff;
+}
+
+.video-wrapper{}
+
+.main-content__article{
+    font-size: 13px;
+    padding: 0 1.5em;
+    overflow: hidden;
+}
+
+.main-content__headline{
+    color: #fff;
+    font-size: 3em;
+    margin-top: 1em;
+    margin-bottom: .25em;
+}
+
+.main-content__copy{
+    font-size: 1.125em;
+    margin-bottom: 1.5em;
+}
+
+
+
+
+.signup{}
+
+.signup__form{}
+
+.signup__label{}
+
+.signup__label--email{
+    display: inline-block;
+    margin-bottom: .75em;
+    width: 61%;
+}
+
+.signup__label--chk{
+    display: block;
+}
+
+.signup__label-text{}
+
+.signup__label-text--email{
+    display: block;
+    font-size: 1.125em;
+    font-family:'RefrigeratorDeluxeW01-H';
+    margin-bottom: .25em;
+}
+
+.signup__input{}
+
+.signup__input--email{
+    border-radius: 6px;
+    outline: 0;
+    border: 0;
+    padding: 1em .25em;
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.signup__input--checkbox{
+    width: 20px;
+    height: 20px;
+    border-radius: 6px;
+    background: #fff;
+    margin-right: .5em;
+}
+
+.signup__label-text--chk{
+    width: 87%;
+    font-size: 0.75em;
+}
+
+.signup__input--checkbox,
+.signup__label-text--chk{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.cta--submit{
+    text-align: center;
+    background: #EC406A;
+    color: #fff;
+    font-size: 1.5em;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.cta{
+    font-family:'RefrigeratorDeluxeW01-H';
+    border-radius: 6px;
+    outline: 0;
+    border: 0;
+    padding: .5em 1.25em;
+    transition: opacity .2s;
+}
+
+.cta:hover{
+    opacity: .7;
+}
+
+
+
+.main-footer{
+    background: #000;
+    color: #fff;
+    padding: 3em 1.5em 1.5em 1.5em;
+    padding-top: 3em;
+}
+
+.main-footer__legal{
+    font-size: 0.6875em;
+}
+
+.main-footer__social{
+    margin-bottom: 1em;
+}
+
+.main-footer__copy{}
+
+
+
+
+
+
+@media only screen and (min-width: 40em) {}
+
+
+@media only screen and (min-width: 30em) { /* 480 */
+    .main-header__banner-wrap{
+        padding: 1em 4em 8em 4em;
+        margin-bottom: 8em;
+    }
+
+    .main-header:before{
+        width: 38px;
+        height: 6px;
+        bottom: 23em;
+    }
+
+    .main-header:after{
+        width: 42px;
+        height: 6px;
+        bottom: 21em;
+        right: 35%;
+    }
+
+    .main-header__banner-wrap:before{
+        /* width: 255px;
+        height: 315px; */
+        width: 192px;
+        height: 237px;
+        bottom: -7em;
+    }
+
+    .main-header__banner-wrap:after{
+        /* width: 111px;
+        height: 109px; */
+        width: 84px;
+        height: 82px;
+        bottom: -6em;
+        right: 6em;
+    }
+
+    .main-header__headline-separator{
+        display: inline;
+    }
+
+    .main-header__audio-wrapper:before{
+        content: "";
+        background-image: url(../img/snowman1.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        left: -6em;
+        bottom: 0;
+        width: 84px;
+        height: 93px;
+    }
+
+    /* .main-header__audio-wrapper:after{
+        content: "";
+        position: absolute;
+        width: 42px;
+        height: 6px;
+
+        background-image: url(../img/snow-pile-2.png);
+
+        top: -5em;
+        right: 0;
+    } */
+
+    .signup__label--email{
+        width: 77%;
+    }
+
+}
+
+
+@media only screen and (min-width: 37.5em) { /* 600 */
+    .main-content__article{
+        font-size: 16px;
+    }
+
+    .signup__input--email{
+        padding: 1.35em .25em;
+    }
+
+    .main-footer{
+        overflow: hidden;
+    }
+
+    .main-footer__social{
+        float: right;
+    }
+}
+
+
+@media only screen and (min-width: 56.25em) { /* 900 */
+    .page-wrap{
+        min-height: 100vh;
+        display: flex;
+        align-items: stretch;
+    }
+
+    .main-header,
+    .main-content{
+        width: 50%;
+    }
+
+    .main-header:before{
+        bottom: 30em;
+    }
+
+    .main-header:after{
+        content: "";
+        width: 19px;
+        height: 100%;
+        position: absolute;
+        right: -9px;
+        top: 0;
+        bottom: 0;
+
+        background-image: url(../img/brite-winter-snow-edge.png);
+    }
+
+    .main-header__banner-wrap:before{
+        /* width: 255px;
+        height: 315px; */
+        width: 192px;
+        height: 237px;
+        bottom: -7em;
+        right: -1em;
+    }
+
+    .main-header__banner-wrap:after{
+        /* width: 111px;
+        height: 109px; */
+        width: 84px;
+        height: 82px;
+        bottom: -6em;
+        right: 7.75em;
+    }
+
+    .main-header__audio-wrapper:before{
+        left: -5em;
+    }
+
+    .main-header__audio-wrapper:after{
+        content: "";
+        position: absolute;
+        width: 42px;
+        height: 6px;
+        background-image: url(../img/snow-pile-2.png);
+        top: -12em;
+        right: 3em;
+    }
+
+    .main-content__article{
+        padding: 0 3em;
+    }
+}
+
+
+
+
+
+
+
+
+
