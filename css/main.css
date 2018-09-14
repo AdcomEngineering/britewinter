@@ -311,6 +311,12 @@ h4, h5, h6{
 
 .video-wrapper{}
 
+    .video-wrapper video {
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+    }
+
 .main-content__article{
     font-size: 13px;
     padding: 0 1.5em;
@@ -553,6 +559,7 @@ h4, h5, h6{
         bottom: 0;
 
         background-image: url(../img/brite-winter-snow-edge.png);
+        z-index: 100;
     }
 
     .main-header__banner-wrap:before{
