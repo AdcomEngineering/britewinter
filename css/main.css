@@ -438,7 +438,14 @@ h4, h5, h6{
 
 .main-footer__copy{}
 
+.main-footer__logo {
+    margin: 0 auto;
+    max-width: 100%;
+}
 
+    .main-footer__logo--blue {
+        display: none;
+    }
 
 
 
@@ -506,12 +513,24 @@ h4, h5, h6{
     }
 
     .main-footer{
-        overflow: hidden;
+        position: relative;
     }
 
     .main-footer__social{
         float: right;
     }
+
+    .main-footer__logo {
+        position: absolute;
+        display: none;
+    }
+    
+        .main-footer__logo--blue {
+            display: block;
+            top: 1rem;
+            left: -152px;
+            z-index: 1000;
+        }
 }
 
 
@@ -573,6 +592,7 @@ h4, h5, h6{
     }
 
     .main-footer {
+        padding-top: 8rem;
         padding-left: 6rem;
         padding-right: 6rem;
     }
