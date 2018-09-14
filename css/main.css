@@ -559,6 +559,7 @@ h4, h5, h6{
         bottom: 0;
 
         background-image: url(../img/brite-winter-snow-edge.png);
+        background-repeat: repeat-y;
         z-index: 100;
     }
 
