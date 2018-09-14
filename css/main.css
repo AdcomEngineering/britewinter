@@ -293,6 +293,16 @@ h4, h5, h6{
     position: relative;
 }
 
+.cta--lern-more{
+    display: block;
+    background: #73D0E9;
+    color: #fff;
+    width: 200px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 1.5em;
+    font-size: 1.5em;
+}
 
 .main-content{
     background: #000;
